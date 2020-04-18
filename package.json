@@ -1,0 +1,40 @@
+{
+	"name": "mercury-cash",
+	"version": "1.0.0",
+	"description": "Automation Test",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint cypress",
+		"test:suite": "node cypress_runner.js -b chrome --env=dev -s",
+		"test:e2e": "node cypress_runner.js -b chrome -s cypress/test_suite/e2e/*.spec.js",
+		"test:integration": "node cypress_runner.js -b chrome -s cypress/test_suite/integration/*.spec.js",
+		"test:regression": "node cypress_runner.js -b chrome -s cypress/test_suite/regression/*.spec.js",
+		"test:smoke": "node cypress_runner.js -b chrome -s cypress/test_suite/smoke/*.spec.js"
+	},
+	"pre-commit": [
+		"lint"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"cypress": "^4.4.0",
+		"cypress-file-upload": "^3.5.3",
+		"cypress-plugin-tab": "^1.0.5",
+		"dotenv": "^8.2.0",
+		"dotenv-safe": "^8.2.0",
+		"eslint": "^6.8.0",
+		"eslint-plugin-cypress": "^2.10.3",
+		"ls": "^0.2.1",
+		"mocha": "^5.2.0",
+		"mochawesome": "4.1.0",
+		"mochawesome-merge": "^4.0.1",
+		"mochawesome-report-generator": "^4.1.0",
+		"pre-commit": "^1.2.2",
+		"proper-url-join": "^2.1.1",
+		"rimraf": "^3.0.2"
+	},
+	"dependencies": {
+		"faker": "^4.1.0",
+		"lodash": "^4.17.15"
+	}
+}

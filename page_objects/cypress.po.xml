@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root>
+	<!-- Object Mappings For Login screen -->
+	<page name="cypress_page">
+		<obj name="features_label" attr="css" value=".styled__MenuWrapper-sc-16oj5lj-1 > :nth-child(1) > :nth-child(1) > .Link-sc-5cc5in-0" />
+		<obj name="how_it_works_label" attr="css" value=".styled__MenuWrapper-sc-16oj5lj-1 > :nth-child(1) > :nth-child(2) > .Link-sc-5cc5in-0" />
+		<obj name="dash_board_label" attr="css" value=".styled__MenuWrapper-sc-16oj5lj-1 > :nth-child(1) > :nth-child(3) > .Link-sc-5cc5in-0" />
+	</page>
+</root>

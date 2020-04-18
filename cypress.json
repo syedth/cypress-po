@@ -1,0 +1,16 @@
+{
+    "chromeWebSecurity": false,
+    "video": false,
+    "viewportWidth": 1024,
+    "viewportHeight": 768,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+    },
+    "screenshotsFolder": "cypress/report/mochawesome-report/assets",
+    "integrationFolder": "./"
+}
